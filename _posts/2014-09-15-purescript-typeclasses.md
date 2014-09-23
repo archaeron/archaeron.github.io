@@ -65,4 +65,4 @@ class (Functor f) <= Apply f where
 class (Apply f) <= Applicative f where
     pure :: forall a. a -> f a
 
-{% endhightlight %}
+{% endhighlight %}
