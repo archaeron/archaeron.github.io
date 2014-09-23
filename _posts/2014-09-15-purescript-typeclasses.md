@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Purescript Typeclasses
-date:       2014-09-10 11:21:29
+date:       2014-09-15 11:21:29
 summary:    This post lists some of purescripts typeclasses
 categories: functional programming purescript typeclass
 ---
