@@ -34,9 +34,10 @@ class (Semigroup m) <= Monoid m where
 A functor has a `map` function `(<$>)`.
 Other names i've found:
 
-    - Scala: `map`
-    - Elm: `lift`
-    - Haskell: `fmap`
+    -   Scala: `map`
+    -   Elm: `lift`
+    -   Haskell: `fmap`
+
 
 {% highlight haskell %}
 
