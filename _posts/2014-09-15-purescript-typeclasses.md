@@ -10,7 +10,7 @@ This is a cheat sheet for me
 
 ### Semigroup
 
-The (<>) operator is for concatenation, and must be associative: (a <> b) <> c = a <> (b <> c)
+The `(<>)` operator is for concatenation, and must be associative: `(a <> b) <> c = a <> (b <> c)`
 
 {% highlight haskell %}
 
@@ -20,7 +20,7 @@ class Semigroup a where
 {% endhighlight %}
 
 ### Monoid
-A monoid describes how to accumulate a result with the type m
+A monoid describes how to accumulate a result with the type `m`
 
 {% highlight haskell %}
 
@@ -31,11 +31,12 @@ class (Semigroup m) <= Monoid m where
 
 ### Functor
 
-A functor has a "map" function (<$>).
+A functor has a `map` function `(<$>)`.
 Other names i've found:
-    - Scala: Map
-    - Elm: lift
-    - Haskell: fmap
+
+    - Scala: `map`
+    - Elm: `lift`
+    - Haskell: `fmap`
 
 {% highlight haskell %}
 
