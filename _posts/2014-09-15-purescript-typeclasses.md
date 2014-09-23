@@ -34,9 +34,9 @@ class (Semigroup m) <= Monoid m where
 A functor has a `map` function `(<$>)`.
 Other names:
 
-    -   Scala: `map`
-    -   Elm: `lift`
-    -   Haskell: `fmap`
+- Scala: `map`
+- Elm: `lift`
+- Haskell: `fmap`
 
 
 {% highlight haskell %}
@@ -49,6 +49,7 @@ class Functor f where
 ### Apply
 
 Apply works well together with a functor. You use the functor for the first argument and the apply for the rest.
+
 Example: `lift3 f x y z = f <$> x <*> y <*> z`
 
 {% highlight haskell %}
