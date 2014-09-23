@@ -32,7 +32,7 @@ class (Semigroup m) <= Monoid m where
 ### Functor
 
 A functor has a `map` function `(<$>)`.
-Other names i've found:
+Other names:
 
     -   Scala: `map`
     -   Elm: `lift`
@@ -60,7 +60,7 @@ class (Functor f) <= Apply f where
 
 ### Applicative
 
-{% hightlight haskell %}
+{% highlight haskell %}
 
 class (Apply f) <= Applicative f where
     pure :: forall a. a -> f a
