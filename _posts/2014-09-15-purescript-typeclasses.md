@@ -46,3 +46,23 @@ class Functor f where
 
 {% endhighlight %}
 
+### Apply
+
+Apply works well together with a functor. You use the functor for the first argument and the apply for the rest.
+Example: `lift3 f x y z = f <$> x <*> y <*> z`
+
+{% highlight haskell %}
+
+class (Functor f) <= Apply f where
+    (<*>) :: forall a b. f (a -> b) -> f a -> f b
+
+{% endhighlight %}
+
+### Applicative
+
+{% hightlight haskell %}
+
+class (Apply f) <= Applicative f where
+    pure :: forall a. a -> f a
+
+{% endhightlight %}
