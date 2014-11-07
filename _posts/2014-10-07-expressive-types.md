@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Expressive Types
+title:      The Expressiveness Of Types
 date:       2014-10-07 11:21:29
 summary:    One of the reasons why I love functional programming
 categories: functional programming types why-i-love-fp
