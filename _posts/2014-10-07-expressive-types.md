@@ -27,3 +27,18 @@ or even
 {% highlight fsharp %}
 drawWeather Sunny (Humidity 10<percent>) (Temp 30<celsius>) (Wind 4<kmh>)
 {% endhighlight %}
+
+It is possible to make the types more expressive in Java, but the language makes it a lot harder.
+
+In F# you need this for the wind velocity:
+
+{% highlight fsharp %}
+[<Measure>] type kmh
+type Wind = Wind of int<kmh>
+{% endhighlight %}
+
+Or in Haskell:
+
+{% highlight fsharp %}
+drawWeather Sunny (Humidity 10) (Temp 30) (Wind 4)
+{% endhighlight %}
