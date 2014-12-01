@@ -1,8 +1,8 @@
 # Site settings
 title: Archaeron
 email: your_email@example.com
-author: John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+author: Nicolas
+description: "Some posts about programming"
 baseurl: ""
 url: "http://archaeron.github.io"
 google_analytics: 
