@@ -67,3 +67,47 @@ class (Apply f) <= Applicative f where
     pure :: forall a. a -> f a
 
 {% endhighlight %}
+
+### Traversable
+
+{% highlight haskell %}
+class (Functor t, Foldable t) <= Traversable t where
+	traverse :: forall a b f. (Applicative f) => (a -> f b) -> t a -> f (t b)
+	sequence :: forall a f. (Applicative f) => t (f a) -> f (t a)
+
+{% endhighlight %}
+
+### Bind
+
+{% highlight haskell %}
+
+class (Apply m) <= Bind m where
+	(>>=) :: forall a b. m a -> (a -> m b) -> m b
+
+{% endhighlight %}
+
+### Semigroupoid
+
+{% highlight haskell %}
+
+class Semigroupoid a where
+	(<<<) :: forall b c d. a c d -> a b c -> a b d
+
+{% endhighlight %}
+
+### Category
+
+{% highlight haskell %}
+
+class (Semigroupoid a) <= Category a where
+	id :: forall t. a t t
+
+{% endhighlight %}
+
+### Monad
+
+{% highlight haskell %}
+
+class (Applicative m, Bind m) <= Monad m where
+
+{% endhighlight %}
