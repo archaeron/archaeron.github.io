@@ -20,6 +20,7 @@ class Semigroup a where
 {% endhighlight %}
 
 ### Monoid
+
 A monoid describes how to accumulate a result with the type `m`
 
 {% highlight haskell %}
@@ -32,12 +33,14 @@ class (Semigroup m) <= Monoid m where
 ### Functor
 
 A functor has a `map` function `(<$>)`.
+
+It's also called `lift`, because it lifts a function into the functor: `a -> b` becomes `f a -> f b`.
+
 Other names:
 
 - Scala: `map`
 - Elm: `lift`
 - Haskell: `fmap`
-
 
 {% highlight haskell %}
 
