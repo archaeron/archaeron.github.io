@@ -39,7 +39,7 @@ It's also called `lift`, because it lifts a function into the functor: `a -> b` 
 Other names:
 
 - Scala: `map`
-- Elm: `lift`
+- Elm: `lift` or `(<~)` 
 - Haskell: `fmap`
 
 {% highlight haskell %}
@@ -54,6 +54,11 @@ class Functor f where
 Apply works well together with a functor. You use the functor for the first argument and the apply for the rest.
 
 Example: `lift3 f x y z = f <$> x <*> y <*> z`
+
+Other names:
+
+- Haskell: `ap`
+- Elm: `(~)`
 
 {% highlight haskell %}
 
