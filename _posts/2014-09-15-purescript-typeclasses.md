@@ -10,7 +10,7 @@ This is a cheat sheet for me
 
 ### Semigroup
 
-The `(<>)` operator is for concatenation, and must be associative: `(a <> b) <> c = a <> (b <> c)`
+The `(<>)` operator is for 'concatenation', and must be associative: `(a <> b) <> c = a <> (b <> c)`
 
 {% highlight haskell %}
 
@@ -39,7 +39,7 @@ It's also called `lift`, because it lifts a function into the functor: `a -> b` 
 Other names:
 
 - Scala: `map`
-- Elm: `lift` or `(<~)` 
+- Elm: `map` or `(<~)` (was `lift` or `(<~)`)
 - Haskell: `fmap`
 
 {% highlight haskell %}
